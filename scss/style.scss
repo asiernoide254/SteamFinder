@@ -1,4 +1,5 @@
 //Se cambian las variables del sass
+$text-primary: #5FC0F4;
 $enable-gradients: true;
 
 //Se importa bootstrap
@@ -6,6 +7,12 @@ $enable-gradients: true;
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 
 //Se crean o modifican las clases que se quiera del css
+h2 {
+    font-size: 32;
+    //Aqui quiero poner el font-style del prototipo, pero hay que importarlo y eso xd
+    font-weight: lighter;
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -17,26 +24,63 @@ nav {
 
 .main-screen {
     width: 100%;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 63px);
 
-    position: relative;
+    position: fixed;
     top: 63px;
     left: 0;
     bottom: 0;
     right: 0;
     margin: auto;
     background-color: #1B2838;
-}
 
-.main-screen__container {
-    position: absolute;
-    margin: auto;
+    &__container {
+        //Centrar el contenedor
+        justify-content: center;
+        align-items: center;
+        top: 20%;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+
+        position: relative;
+        width: inherit;
+        height: inherit;
+    }
+
+    &__botones {
+        //Se crea un contenedor para los botones
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+
+        position: relative;
+    }
+
+    &__descripcion {
+        //Se crea un contenedor para la descripcion
+        display: flexbox;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0 20% 0 20%;
+
+        position: relative;
+    }
 }
 
 .btn-primary {
     background-color: #214168;
     border-radius: 15px;
     border: none;
+
+    &:hover {
+        background-color: #171A21;
+        transition: all 0.5s ease;
+    }
 }
 
 #inicio-button {
