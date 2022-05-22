@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,32 +7,27 @@
         <title>SteamFinder - Inicio</title>
         <link href="css/style.css" rel="stylesheet"/>
     </head>
-    <body lang="es" class="bg-dark">
-        <header>
-            <div class="m-2">
-                <img src="img/SteamFinder.svg" alt="SteamFinder" width="40%">
-                <img src="img/SteamFinderLogo.png" alt="SteamFinderLogo" width="10%">
+    <body class="bg-dark">
+        <header id="header-menu">
+            <div class="header__container mx-5 my-1">
+                <img src="img/SteamFinder.svg" id="typography_top" alt="SteamFinder">
+                <img src="img/SteamFinderLogo.png" id="logo_top" alt="Logo de SteamFinder" width="58">
             </div>
         </header>
-        <main>
-            <div class="container">
-                <div class="row">
-                        <h1 class="text-primary">Bienvenido a SteamFinder</h1>
-                        <p class="text-primary">
-                            SteamFinder es un buscador de juegos y usuarios de Steam.
-                            <br/>
-                            <br/>
-                            <a href="https://store.steampowered.com/search/?term=&category1=998&category2=0&sort_by=Released_DESC&page=1" target="_blank" class="btn btn-primary mx-3" role="button">
-                                Ir a la tienda de Steam
-                            </a>
-                            <a href="https://steamcommunity.com/search/users/?l=spanish" target="_blank" class="btn btn-primary mx-3" role="button">
-                                Buscar usuarios
-                            </a>
-                        </p>
-                </div>
-            </div>
-        </main>
-
+        <section class="text-center">
+                <h1 class="text-primary">Bienvenido a SteamFinder</h1>
+                <p class="text-primary">
+                    SteamFinder es un buscador de juegos y usuarios de Steam.
+                    <br/>
+                    <br/>
+                    <a href="https://store.steampowered.com/search/?term=&category1=998&category2=0&sort_by=Released_DESC&page=1" target="_blank" class="btn btn-primary mx-3" role="button">
+                        Ir a la tienda de Steam
+                    </a>
+                    <a href="https://steamcommunity.com/search/users/?l=spanish" target="_blank" class="btn btn-primary mx-3" role="button">
+                        Buscar usuarios
+                    </a>
+                </p>
+        </section>
 
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     </body>
