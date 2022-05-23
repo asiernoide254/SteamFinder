@@ -10,12 +10,11 @@ $enable-gradients: true;
 h2 {
     font-size: x-large;
     //Aqui quiero poner el font-style del prototipo, pero hay que importarlo y eso xd
-    font-weight: lighter;
+    font-weight: 350;
 }
 
 p {
     font-size: large;
-    font-weight: lighter;
 }
 
 nav {
@@ -43,7 +42,7 @@ nav {
         //Centrar el contenedor
         justify-content: center;
         align-items: center;
-        top: 20%;
+        top: 10%;
         padding: 0;
         margin: 0;
 
@@ -79,6 +78,10 @@ nav {
     background-color: #214168;
     border-radius: 15px;
     border: none;
+    width: 20%;
+    padding: 14px;
+    cursor: pointer;
+    text-align: center;
 
     &:hover {
         background-color: #171A21;
