@@ -8,8 +8,13 @@ $enable-gradients: true;
 
 //Se crean o modifican las clases que se quiera del css
 h2 {
-    font-size: 32;
+    font-size: x-large;
     //Aqui quiero poner el font-style del prototipo, pero hay que importarlo y eso xd
+    font-weight: lighter;
+}
+
+p {
+    font-size: large;
     font-weight: lighter;
 }
 
@@ -39,8 +44,6 @@ nav {
         justify-content: center;
         align-items: center;
         top: 20%;
-        width: 100%;
-        height: 100%;
         padding: 0;
         margin: 0;
 
@@ -66,7 +69,7 @@ nav {
         justify-content: center;
         align-items: center;
         padding: 0;
-        margin: 0 20% 0 20%;
+        margin: 10% 20% 0 20%;
 
         position: relative;
     }
