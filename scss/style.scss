@@ -7,6 +7,7 @@ $enable-gradients: true;
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 
 //Se crean o modifican las clases que se quiera del css
+
 h2 {
     font-size: x-large;
     //Aqui quiero poner el font-style del prototipo, pero hay que importarlo y eso xd
@@ -73,18 +74,23 @@ nav {
     }
 }
 
-.btn-primary {
+.btn {
     background-color: #214168;
     border-radius: 15px;
     border: none;
-    width: 20%;
-    padding: 14px;
+
     cursor: pointer;
     text-align: center;
 
     &:hover {
         background-color: #171A21;
         transition: all 0.5s ease;
+    }
+
+    &-primary {
+        width: 20%;
+        padding: 14px;
+        font-size: large;
     }
 }
 
