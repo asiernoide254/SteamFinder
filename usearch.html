@@ -9,7 +9,7 @@
     </head>
     <body>
         <nav>
-            <div class="navbar__container mx-5 my-1">
+            <div class="navbar__container mx-4 my-1">
                 <a href="/" id="inicioButton" class="btn btn-secondary" role="button">
                     Inicio
                 </a>
@@ -21,10 +21,10 @@
             </div>
         </nav>
         <div class="main-screen">
-            <h1 class="text-light text-center my-5">Búsqueda por usuario</h1>
+            <h1 class="text-light text-center my-5">Búsqueda de usuario</h1>
             <div id="buscadorUsuario" class="main-screen__buscador">
-                <form class="text-center">
-                    <input class="search-bar px-3 py-2" type="search" aria-label="Search"/>
+                <form action="https://steamcommunity.com/search/users/" method="get" class="text-center">
+                    <input name="text" class="search-bar px-3 py-2" type="search" aria-label="Search"/>
                     <button class="btn btn-search" type="submit">
                         <i class="bi bi-search"></i>
                     </button>

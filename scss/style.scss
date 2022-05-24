@@ -102,6 +102,13 @@ nav {
         padding: 14px;
         font-size: large;
     }
+
+    &-search {
+        background-color: #181B23;
+        font-size: x-large;
+        padding: 7px 15px 7px 15px;
+        box-shadow: -4px 4px;
+    }
 }
 
 .search-bar {
@@ -110,16 +117,10 @@ nav {
     width: 20%;
 }
 
-.btn-search {
-    background-color: #181B23;
-    font-size: x-large;
-    padding: 7px 14px 7px 14px;
-}
-
 .bi-search {
     color: #2B66AF;
 }
 
 #inicioButton {
-    margin-right: 5px;
+    margin-right: 15px;
 }

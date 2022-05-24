@@ -9,8 +9,8 @@
     </head>
     <body>
         <nav id="navbar">
-            <div class="navbar__container mx-5 my-1">
-                <a href="/" id="inicio-button" class="btn btn-secondary" role="button">
+            <div class="navbar__container mx-4 my-1">
+                <a href="/" id="inicioButton" class="btn btn-secondary" role="button">
                     Inicio
                 </a>
                 <img src="img/SteamFinderLogo.png" id="logo_top" alt="Logo de SteamFinder" width="55">
@@ -21,6 +21,15 @@
             </div>
         </nav>
         <div class="main-screen">
+            <h1 class="text-light text-center my-5">Búsqueda de videojuegos</h1>
+            <div id="buscadorVideojuego" class="main-screen__buscador">
+                <form method="get" action="https://store.steampowered.com/search/" class="text-center">
+                    <input name="term" class="search-bar px-3 py-2" type="search" aria-label="Search"/>
+                    <button class="btn btn-search" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+            </div>
         </div>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     </body>
