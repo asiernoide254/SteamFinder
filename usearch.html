@@ -4,23 +4,44 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SteamFinder - Inicio</title>
+        <title>Buscar usuarios - SteamFinder</title>
         <link href="css/style.css" rel="stylesheet"/>
     </head>
     <body>
-        <nav id="navbar">
+        <nav>
             <div class="navbar__container mx-5 my-1">
-                <a href="/" id="inicio-button" class="btn btn-secondary" role="button">
+                <a href="/" id="inicioButton" class="btn btn-secondary" role="button">
                     Inicio
                 </a>
-                <img src="img/SteamFinderLogo.png" id="logo_top" alt="Logo de SteamFinder" width="55">
-                <img src="img/SteamFinder.svg" id="typography_top" alt="SteamFinder">
+                <img src="img/SteamFinderLogo.png" id="logoTop" alt="Logo de SteamFinder" width="55">
+                <img src="img/SteamFinder.svg" id="typographyTop" alt="SteamFinder">
                 <a href="/vgsearch.html" class="btn btn-secondary mx-3" role="button">
                     Buscar videojuegos
                 </a>
             </div>
         </nav>
         <div class="main-screen">
+            <h1 class="text-light text-center my-5">Búsqueda por usuario</h1>
+            <div id="buscadorUsuario" class="main-screen__buscador">
+                <form class="text-center">
+                    <input class="search-bar px-3 py-2" type="search" aria-label="Search"/>
+                    <button class="btn btn-search" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="main-screen__descripcion">
+                <h2 class="text-primary my-3">¿Qué es el ID?</h3>
+                <p class="mb-5">
+                    El ID de Steam es un identificador único de 64 bits asociado a una cuenta de usuario de Steam.
+                </p>
+                <h2 class="text-primary my-3">¿Cómo encuentro mi ID de Steam?</h3>
+                <p>
+                    1. Abre Steam y haz clic en tu nombre de Steam, en la esquina superior derecha.<br/>
+                    2. Selecciona "Detalles de la cuenta".<br/>
+                    3. Podrás ver tu nombre de Steam en la parte superior y, justo debajo, tu ID de Steam.
+                </p>
+            </div>
         </div>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     </body>

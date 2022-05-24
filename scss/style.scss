@@ -15,6 +15,7 @@ h2 {
 }
 
 p {
+    color: white;
     font-size: large;
 }
 
@@ -72,6 +73,15 @@ nav {
 
         position: relative;
     }
+
+    &__buscador {
+        justify-content: center;
+        align-items: center;
+        padding: inherit;
+        margin: inherit;
+
+        position: relative;
+    }
 }
 
 .btn {
@@ -94,6 +104,22 @@ nav {
     }
 }
 
-#inicio-button {
+.search-bar {
+    border-radius: 50px;
+    margin-right: 10px;
+    width: 20%;
+}
+
+.btn-search {
+    background-color: #181B23;
+    font-size: x-large;
+    padding: 7px 14px 7px 14px;
+}
+
+.bi-search {
+    color: #2B66AF;
+}
+
+#inicioButton {
     margin-right: 5px;
 }
