@@ -19,13 +19,16 @@ p {
     font-size: large;
 }
 
-nav {
-    position: fixed;
+header {
+    display: flex;
     top: 0;
     left: 0;
     height: 144px;
     width: 100%;
     background-color: #171A21;
+    justify-content: space-between;
+    //align-items: center;
+    //padding: 10px;
 }
 
 .main-screen {
@@ -44,7 +47,7 @@ nav {
         //Centrar el contenedor
         justify-content: center;
         align-items: center;
-        top: 10%;
+        top: 1%;
         padding: 0;
         margin: 0;
 
@@ -131,5 +134,5 @@ nav {
 }
 
 #typography_top{
-    margin-right: 50%;
+    //margin-right: 50%;
 }
