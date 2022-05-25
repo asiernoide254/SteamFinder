@@ -26,6 +26,10 @@ nav {
     height: 63px;
     width: 100%;
     background-color: #171A21;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .main-screen {
@@ -182,4 +186,10 @@ nav {
 }
 
 @media screen and (max-width:600px) {
+}
+
+@media screen and (max-width:650px) {
+    nav{
+        flex-direction: column;
+    }
 }
