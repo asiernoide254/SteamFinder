@@ -23,7 +23,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    height: 63px;
+    height: 144px;
     width: 100%;
     background-color: #171A21;
 }
@@ -33,7 +33,7 @@ nav {
     height: calc(100vh - 63px);
 
     position: fixed;
-    top: 63px;
+    top: 144px;
     left: 0;
     bottom: 0;
     right: 0;
@@ -121,6 +121,15 @@ nav {
     color: #2B66AF;
 }
 
-#inicioButton {
+#inicio_button {
+    margin-top: 20px;
     margin-right: 15px;
+}
+
+#logo_top, #typography_top, #user_button, #videogames_button{
+    margin-top: 20px;
+}
+
+#typography_top{
+    margin-right: 50%;
 }
