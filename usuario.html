@@ -19,15 +19,10 @@
                 <img src="img/SteamFinderLogo.png" id="logo_top" alt="Logo de SteamFinder" width="55">
                 <img src="img/SteamFinder.svg" id="typography_top" alt="SteamFinder">
             </div>
-            <div class="navbar__container">
-                <div class="main-screen__buscador">
-                    <form method="get" action="https://store.steampowered.com/search/" class="text-center">
-                        <input name="term" class="search-bar" type="search" aria-label="Search" />
-                        <button class="btn btn-search" type="submit">
-                            <i class="bi bi-search"></i>
-                        </button>
-                    </form>
-                </div>
+            <div class="navbar__container mx-4 my-1">
+                <a href="/vgsearch.html" class="btn btn-secondary mx-3" role="button">
+                    Buscar videojuegos
+                </a>
             </div>
         </nav>
     </header>
@@ -35,47 +30,65 @@
         <div class="main-screen__container">
             <div class="contenedor-usuario">
                 <div class="usuario-info">
-                    <h4>Username.    Amongus.     Nivel 80</h4>
+                    <div class="usuario-info__left">
+                        <img src="img/avatar.png" alt="Avatar" class="usuario-info__left-avatar">
+                        <div class="usuario-info__left__desc">
+                            <h2>xxXDarkVoid42Xxx</h2>
+                            <div class="usuario-info__left__desc-nacionalidad">
+                                <img id="bandera" src="http://purecatamphetamine.github.io/country-flag-icons/3x2/ES.svg" alt="Bandera de España"/>
+                                <span>Madrid, España</span>
+                            </div>
+                            <h6>Me gusta Among Us y los juegos de terror.</h6>
+                        </div>
+                    </div>
+                    <div class="usuario-info__right">
+                        <h1>Nivel</h1>
+                        <div class="usuario-info__right__nivel">
+                            <h3>2</h3>
+                        </div>
+                    </div>
                 </div>
                 <div class="usuario-contenedor px-2" id="usuario-nombre-contenedor">
-                    <h4>Nombre: Pepe</h4>
-                    <h4>Se unió el 22/04/2022</h4>
+                    <h2>Nombre: Pepe</h2>
+                    <h2>Se unió el 22/04/2022</h2>
                 </div>
                 <div class="usuario-contenedor px-2" id="usuario-actividad-contenedor">
-                    <h4>Actividad: mucha</h4>
+                    <h2>Actividad total: 12,3h</h2>
+                    <h2>Últimas dos semanas: 12,3h</h2>
+                    <h2>Tiempo medio por día: 12,3h</h2>
                 </div>
                 <div class="usuario-contenedor px-2" id="usuario-valor-contenedor">
-                    <h4>Valor de cuenta</h4>
+                    <h2>Valor de cuenta estimado: 0,01€</h2>
                 </div>
                 <div class="usuario-contenedor p-2" id="usuario-juegos-contenedor">
                     <h6>Actividad reciente</h6>
                     <div class="usuario-juegos-contenedor py-2 mx-2">
 
                         <div class="card card-reciente" id="reciente1">
-                            <img src="img/videojuegos/AmongUs.jpg" class="card-img-top" alt="Dota 2">
+                            <img src="img/videojuegos/AmongUs.jpg" class="card-img-top" alt="Among Us">
                             <div class="card-body">
-                                <h5 class="card-title text-light">Among Us</h5>
                                 <p class="card-text card-text-reciente">
+                                    12 h registradas (últimas 2 semanas)<br>
                                     Jugado por última vez el 22/04/2022.
                                 </p>
                             </div>
                         </div>
 
                         <div class="card card-reciente" id="reciente2">
-                            <img src="img/videojuegos/AmongUs.jpg" class="card-img-top" alt="Dota 2">
+                            <img src="img/videojuegos/AmongUs.jpg" class="card-img-top" alt="Among Us">
                             <div class="card-body">
-                                <h5 class="card-title text-light">Among Us</h5>
                                 <p class="card-text card-text-reciente">
+                                    12 h registradas (últimas 2 semanas)<br>
                                     Jugado por última vez el 22/04/2022.
                                 </p>
                             </div>
                         </div>
 
                         <div class="card card-reciente" id="reciente3">
-                            <img src="img/videojuegos/AmongUs.jpg" class="card-img-top" alt="Dota 2">
+                            <img src="img/videojuegos/AmongUs.jpg" class="card-img-top" alt="Among Us">
                             <div class="card-body">
-                                <h5 class="card-title text-light">Among Us</h5>
                                 <p class="card-text card-text-reciente">
+                                    12 h registradas (últimas 2 semanas)<br>
                                     Jugado por última vez el 22/04/2022.
                                 </p>
                             </div>
