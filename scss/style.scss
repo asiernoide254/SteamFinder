@@ -201,7 +201,7 @@ nav {
 }
 
 .usuario-contenedor {
-    background-image: linear-gradient(right, #0B0B0B, #204067);
+    background-image: linear-gradient(to right, #0B0B0B, #204067);
     color: #fff;
 }
 
@@ -215,7 +215,6 @@ nav {
         display: flex;
         flex-direction: row;
         justify-content: left;
-        align-items: left;
         background: none;
 
         &-avatar {
@@ -233,7 +232,6 @@ nav {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: left;
 
             &-nacionalidad #bandera {
                 height: 23px;
