@@ -323,6 +323,19 @@ nav {
     }
 }
 
+.form-select {
+    width: 315px;
+    justify-content: end;
+    align-items: right;
+}
+
+.tumamametapaconlasabana {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 //Implementado parcialmente (reajuste de elementos segun el ancho de la pantalla)
 @media screen and (max-width: 900px) {
     .contenedor-videojuegos {
