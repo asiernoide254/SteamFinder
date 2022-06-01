@@ -29,12 +29,12 @@
     <div class="main-screen">
         <h1 class="text-light text-center my-5">Búsqueda de videojuegos</h1>
         <div id="buscadorVideojuego" class="main-screen__buscador">
-            <form method="get" action="https://store.steampowered.com/search/" class="text-center">
-                <input name="term" class="search-bar px-3 py-2" type="search" aria-label="Search" />
-                <button class="btn btn-search" type="submit">
+            <div class="text-center">
+                <input id="searchBar" class="search-bar px-3 py-2" type="search" onkeyup="search()" aria-label="Search" />
+                <button class="btn btn-search" type="submit" onclick="search()">
                     <i class="bi bi-search"></i>
                 </button>
-            </form>
+            </div>
         </div>
         <div class="contenedor-videojuegos">
             <div class="card">
@@ -93,6 +93,7 @@
         </div>
     </div>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/search.js"></script>
 </body>
 
 </html>
