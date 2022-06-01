@@ -308,6 +308,8 @@ nav {
 #usuario-juegos-contenedor {
     grid-area: juegos;
     margin-bottom: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 //Este es el grid de las cartas de juegos recientes
