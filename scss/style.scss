@@ -173,18 +173,10 @@ nav {
     &-img {
         height: 125px;
         width: 40%;
-        //height: 100%;
         object-fit: cover;
         
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
-        //border-radius: 20px;
-    }
-
-    &-img-overlay {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
     }
 
     &-reciente {
@@ -340,6 +332,12 @@ nav {
 @media screen and (max-width:700px) {
 }
 
+@media screen and (max-width:650px) {
+    nav{
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width:600px) {
     .usuario-juegos-contenedor {
         grid-template-columns: 1fr;
@@ -350,8 +348,18 @@ nav {
     }
 }
 
-@media screen and (max-width:650px) {
-    nav{
+@media screen and (max-width: 400px) {
+    .contenedor-videojuegos .card {
+        display: flex;
         flex-direction: column;
+        height: auto;
+    }
+
+    .card-img {
+        width: 100%;
+
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: initial;
+        border-top-right-radius: 20px;
     }
 }
