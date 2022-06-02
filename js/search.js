@@ -15,13 +15,14 @@ function search() {
         searchText.innerHTML = "Resultados";
     }
 
-    /*for (var i = 0; i < cardImages.length; i++) {
+    //Se jode en vista de movil
+    for (var i = 0; i < cardImages.length; i++) {
         if (filter == "") {
             cardImages[i].style.width = "40%";
         } else {
             cardImages[i].style.width = "25%";
         }
-    }*/
+    }
   
     // Loop through all list items, and hide those who don't match the search query
     for (var i = 0; i < cards.length; i++) {
