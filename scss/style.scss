@@ -308,8 +308,6 @@ nav {
 #usuario-juegos-contenedor {
     grid-area: juegos;
     margin-bottom: 15px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
 }
 
 //Este es el grid de las cartas de juegos recientes
@@ -331,7 +329,7 @@ nav {
     align-items: right;
 }
 
-.tumamametapaconlasabana {
+.filtro {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -375,7 +373,7 @@ nav {
         width: 100%;
 
         border-top-left-radius: 20px;
-        border-bottom-left-radius: initial;
+        border-bottom-left-radius: 0;
         border-top-right-radius: 20px;
     }
 }
