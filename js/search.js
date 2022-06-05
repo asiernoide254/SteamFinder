@@ -1,4 +1,4 @@
-function search() {
+function searchVg() {
     // Declare variables
     var input = document.getElementById("searchBar");
     var filter = input.value.toUpperCase();
@@ -6,6 +6,7 @@ function search() {
     var searchText = document.getElementById("searchText");
     var cards = document.getElementsByClassName("card");
     var cardImages = document.getElementsByClassName("card-img");
+    var resultsFound = false;
 
     if (filter == "") {
         container.style.gridTemplateColumns = "";
@@ -32,8 +33,16 @@ function search() {
 
       if (txtValue.toUpperCase().indexOf(filter) > -1) {
         card.style.display = "";
+        resultsFound = true;
       } else {
         card.style.display = "none";
       }
     }
+
+    var vgSearchError = document.getElementById("vgSearchError");
+    vgSearchError.hidden = resultsFound;
+  }
+
+  function searchUser() {
+    
   }

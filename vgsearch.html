@@ -30,8 +30,8 @@
         <h1 class="text-light text-center my-5">Búsqueda de videojuegos</h1>
         <div id="buscadorVideojuego" class="main-screen__buscador">
             <div class="text-center">
-                <input id="searchBar" class="search-bar px-3 py-2" type="search" onkeyup="search()" aria-label="Search" />
-                <button class="btn btn-search" type="submit" onclick="search()">
+                <input id="searchBar" class="search-bar px-3 py-2" type="search" onkeyup="searchVg()" aria-label="Search" />
+                <button class="btn btn-search" type="submit" onclick="searchVg()">
                     <i class="bi bi-search"></i>
                 </button>
             </div>
@@ -47,6 +47,7 @@
                 <option>Reseñas</option>
             </select>
         </div>
+        <h5 id="vgSearchError" class="text-danger text-center my-3" hidden>No se han encontrado resultados.</h5>
         <div class="contenedor-videojuegos">
             
             <div class="card">
