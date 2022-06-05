@@ -12033,6 +12033,7 @@ h2, .h2 {
 p {
   color: white;
   font-size: large;
+  margin-bottom: 0;
 }
 
 nav {
@@ -12250,7 +12251,7 @@ nav {
 
 .usuario-contenedor > h2, .usuario-contenedor > .h2 {
   font-size: large;
-  padding-top: 4px;
+  padding-top: 6px;
 }
 
 .usuario-contenedor {
