@@ -17,6 +17,7 @@ h2 {
 p {
     color: white;
     font-size: large;
+    margin-bottom: 0;
 }
 
 nav {
@@ -209,7 +210,7 @@ nav {
     //Medida estratégica para evitar el margen de 8px debajo del heading que aparecio misteriosamente
     //(lo peor es que funciona y todo)
     font-size: large;
-    padding-top: 4px;
+    padding-top: 6px;
 }
 
 .usuario-contenedor {
