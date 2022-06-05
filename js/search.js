@@ -3,7 +3,7 @@ function searchVg() {
   var filter = input.value.toUpperCase();
   var container = document.getElementsByClassName("contenedor-videojuegos")[0];
   var searchText = document.getElementById("searchText");
-  var cards = document.getElementsByClassName("card");
+  var cards = container.children;
   var cardImages = document.getElementsByClassName("card-img");
   var resultsFound = false;
 
@@ -47,6 +47,13 @@ function addEnterListener() {
     if(event.key == "Enter") {
       searchUser();
     }
+  });
+}
+
+function addClearListener() {
+  var input = document.getElementById("vgSearchBar");
+  input.addEventListener("search", function(event) {
+    searchVg();
   });
 }
   
