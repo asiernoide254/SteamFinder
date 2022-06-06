@@ -12466,6 +12466,18 @@ nav {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
+  ::-webkit-input-placeholder {
+    font-size: 10px;
+  }
+  :-ms-input-placeholder {
+    font-size: 10px;
+  }
+  ::-ms-input-placeholder {
+    font-size: 10px;
+  }
+  ::placeholder {
+    font-size: 10px;
+  }
 }
 
 @media screen and (max-width: 700px) {

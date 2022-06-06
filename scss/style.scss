@@ -342,6 +342,9 @@ nav {
     .contenedor-videojuegos {
         grid-template-columns: 1fr;
     }
+    ::placeholder{
+        font-size: 10px;
+    }
 }
 
 @media screen and (max-width:700px) {
