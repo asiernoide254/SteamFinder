@@ -189,7 +189,8 @@ nav {
     display: grid;
     gap: 20px;
 
-    grid-template-areas:    "info info info"
+    grid-template-areas:    "buscador buscador buscador"
+                            "info info info"
                             "nombre nombre nombre"
                             "actividad actividad actividad"
                             "valor valor valor"
@@ -274,6 +275,13 @@ nav {
 
 }
 
+.usuario-buscador-contenedor{
+    grid-area: buscador;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 #usuario-nombre-contenedor {
     grid-area: nombre;
     display: flex;
@@ -333,7 +341,7 @@ nav {
     }
 
     ::placeholder {
-        font-size: 10px;
+        font-size: 11px;
     }
 }
 
@@ -356,6 +364,10 @@ nav {
 
     .contenedor-usuario .usuario-info__right {
         display: none;
+    }
+
+    .usuario-buscador-contenedor{
+        justify-content: center;
     }
 }
 

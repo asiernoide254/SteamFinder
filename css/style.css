@@ -12246,7 +12246,7 @@ nav {
   display: -ms-grid;
   display: grid;
   gap: 20px;
-      grid-template-areas: "info info info" "nombre nombre nombre" "actividad actividad actividad" "valor valor valor" "juegos juegos juegos";
+      grid-template-areas: "buscador buscador buscador" "info info info" "nombre nombre nombre" "actividad actividad actividad" "valor valor valor" "juegos juegos juegos";
 }
 
 .usuario-contenedor > h2, .usuario-contenedor > .h2 {
@@ -12261,7 +12261,7 @@ nav {
 }
 
 .usuario-info {
-  -ms-grid-row: 1;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: info;
@@ -12371,8 +12371,24 @@ nav {
   border: 3.5px solid #138B10;
 }
 
+.usuario-buscador-contenedor {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: buscador;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #usuario-nombre-contenedor {
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: nombre;
@@ -12402,21 +12418,21 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-grid-row: 3;
+  -ms-grid-row: 4;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: actividad;
 }
 
 #usuario-valor-contenedor {
-  -ms-grid-row: 4;
+  -ms-grid-row: 5;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: valor;
 }
 
 #usuario-juegos-contenedor {
-  -ms-grid-row: 5;
+  -ms-grid-row: 6;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: juegos;
@@ -12470,16 +12486,16 @@ nav {
     width: 100%;
   }
   ::-webkit-input-placeholder {
-    font-size: 10px;
+    font-size: 11px;
   }
   :-ms-input-placeholder {
-    font-size: 10px;
+    font-size: 11px;
   }
   ::-ms-input-placeholder {
-    font-size: 10px;
+    font-size: 11px;
   }
   ::placeholder {
-    font-size: 10px;
+    font-size: 11px;
   }
 }
 
@@ -12505,6 +12521,11 @@ nav {
   }
   .contenedor-usuario .usuario-info__right {
     display: none;
+  }
+  .usuario-buscador-contenedor {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
