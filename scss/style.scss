@@ -190,6 +190,7 @@ nav {
     gap: 20px;
 
     grid-template-areas:    "buscador buscador buscador"
+                            "error error error"
                             "info info info"
                             "nombre nombre nombre"
                             "actividad actividad actividad"
@@ -282,6 +283,13 @@ nav {
     align-items: center;
 }
 
+.error-contenedor{
+    grid-area: error;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 #usuario-nombre-contenedor {
     grid-area: nombre;
     display: flex;
@@ -366,7 +374,7 @@ nav {
         display: none;
     }
 
-    .usuario-buscador-contenedor{
+    .usuario-buscador-contenedor, .error-contenedor{
         justify-content: center;
     }
 }

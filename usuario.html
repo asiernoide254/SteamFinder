@@ -9,7 +9,7 @@
     <link href="css/style.css" rel="stylesheet" />
 </head>
 
-<body>
+<body onload="addEnterListener()">
     <header>
         <nav id="navbar">
             <div class="navbar__container mx-4 my-1">
@@ -34,6 +34,9 @@
                     <button class="btn btn-search" type="submit" onclick="searchUser()">
                         <i class="bi bi-search"></i>
                     </button>
+                </div>
+                <div class="error-contenedor">
+                    <h6 id="userSearchError" class="text-danger text-center" style="visibility:hidden">No se han encontrado resultados.</h6>
                 </div>
                 <div class="usuario-info">
                     <div class="usuario-info__left">
@@ -108,6 +111,7 @@
         </div>
     </div>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/search.js"></script>
 </body>
 
 </html>
