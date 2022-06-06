@@ -15,7 +15,7 @@ function searchVg() {
       searchText.innerHTML = "Resultados";
   }
 
-  //Se jode en vista de movil
+  //No funciona bien en vista de movil
   for (var i = 0; i < cardImages.length; i++) {
       if (filter == "") {
           cardImages[i].style.width = "40%";

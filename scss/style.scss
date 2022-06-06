@@ -1,16 +1,11 @@
-//Se cambian las variables del sass
 $text-primary: #5FC0F4;
 $enable-gradients: true;
 
-//Se importa bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 
-//Se crean o modifican las clases que se quiera del css
-//si
 h2 {
     font-size: x-large;
-    //Aqui quiero poner el font-style del prototipo, pero hay que importarlo y eso xd
     font-weight: 350;
 }
 
@@ -42,12 +37,9 @@ nav {
     margin: auto;
     background-color: #1B2838;
     flex-direction: column;
-
-    //Permitir scroll vertical
     overflow-y: auto;
 
     &__container {
-        //Centrar el contenedor
         justify-content: center;
         align-items: center;
         top: 10%;
@@ -60,7 +52,6 @@ nav {
     }
 
     &__botones {
-        //Se crea un contenedor para los botones
         display: flex;
         justify-content: center;
         align-items: center;
@@ -71,7 +62,6 @@ nav {
     }
 
     &__descripcion {
-        //Se crea un contenedor para la descripcion
         justify-content: center;
         align-items: center;
         padding: 0;
@@ -207,8 +197,6 @@ nav {
 }
 
 .usuario-contenedor > h2 {
-    //Medida estratégica para evitar el margen de 8px debajo del heading que aparecio misteriosamente
-    //(lo peor es que funciona y todo)
     font-size: large;
     padding-top: 6px;
 }
@@ -305,13 +293,11 @@ nav {
     grid-area: valor;
 }
 
-//Este contenedor incluye el titulo
 #usuario-juegos-contenedor {
     grid-area: juegos;
     margin-bottom: 15px;
 }
 
-//Este es el grid de las cartas de juegos recientes
 .usuario-juegos-contenedor {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -337,7 +323,6 @@ nav {
     justify-content: space-between;
 }
 
-//Implementado parcialmente (reajuste de elementos segun el ancho de la pantalla)
 @media screen and (max-width: 900px) {
     .contenedor-videojuegos {
         grid-template-columns: 1fr;
