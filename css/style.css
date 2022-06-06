@@ -12466,6 +12466,9 @@ nav {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
+  .main-screen__descripcion > img {
+    width: 100%;
+  }
   ::-webkit-input-placeholder {
     font-size: 10px;
   }
@@ -12521,6 +12524,12 @@ nav {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 0;
     border-top-right-radius: 20px;
+  }
+  .main-screen__descripcion > img {
+    width: 200px;
+  }
+  .main-screen__descripcion {
+    margin: 10% 12% 0 12%;
   }
 }
 /*# sourceMappingURL=style.css.map */

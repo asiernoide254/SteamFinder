@@ -342,7 +342,12 @@ nav {
     .contenedor-videojuegos {
         grid-template-columns: 1fr;
     }
-    ::placeholder{
+
+    .main-screen__descripcion > img {
+        width: 100%;
+    }
+
+    ::placeholder {
         font-size: 10px;
     }
 }
@@ -382,5 +387,13 @@ nav {
         border-top-left-radius: 20px;
         border-bottom-left-radius: 0;
         border-top-right-radius: 20px;
+    }
+
+    .main-screen__descripcion > img {
+        width: 200px;
+    }
+
+    .main-screen__descripcion {
+        margin: 10% 12% 0 12%;
     }
 }
