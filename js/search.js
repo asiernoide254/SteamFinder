@@ -65,7 +65,9 @@ function partition(cards, left, right, orderBy) {
           j--;
       }
       if (i <= j) {
-          swap(cards, i, j);
+          if (compare(cards[i], cards[j], orderBy) > 0) {
+            swap(cards, i, j);
+          }
           i++;
           j--;
       }
