@@ -184,7 +184,9 @@ function searchUser() {
   var input = document.getElementById("userSearchBar");
   var filter = input.value.toUpperCase();
 
-    if (filter == "DARKVOID") {
+    if (filter == "") {
+      window.location.href = "usearch.html";
+    } else if (filter == "DARKVOID") {
       window.location.href = "usuario.html";
     } else {
       var userSearchError = document.getElementById("userSearchError");
