@@ -12159,6 +12159,10 @@ nav {
           box-shadow: -4px 4px;
 }
 
+.btn-search:focus {
+  background-color: #171A21;
+}
+
 .btn-more {
   width: 25%;
 }
@@ -12515,6 +12519,38 @@ nav {
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
+}
+
+.navbar__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#enlaceInicio {
+  outline: none;
+}
+
+.logo {
+  border-radius: 20px;
+}
+
+.logo:focus-within {
+  background: radial-gradient(#214168, #21416829);
+  -webkit-box-shadow: 0px 2px 30px #2141689b;
+          box-shadow: 0px 2px 30px #2141689b;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 /*

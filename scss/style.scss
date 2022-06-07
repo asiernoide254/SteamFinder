@@ -110,6 +110,10 @@ nav {
         font-size: x-large;
         padding: 7px 15px 7px 15px;
         box-shadow: -4px 4px;
+
+        &:focus {
+            background-color: #171A21;
+        }
     }
 
     &-more {
@@ -359,6 +363,27 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: right;
+}
+
+.navbar__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#enlaceInicio {
+    outline: none;
+}
+
+.logo {
+    border-radius: 20px;
+
+    &:focus-within {
+        background: radial-gradient(#214168, #21416829);
+        box-shadow: 0px 2px 30px #2141689b;
+        transition: all 0.3s ease;
+    }
 }
 
 //Personalizar scrollbar
