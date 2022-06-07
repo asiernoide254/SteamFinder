@@ -18,7 +18,7 @@
                 </a>
                 <a href="index.html" style="text-decoration: none;">
                     <img src="img/SteamFinderLogo.png" id="logo_top" alt="Logo de SteamFinder" width="55">
-                    <img src="img/SteamFinder.svg" id="typography_top" alt="SteamFinder">
+                    <img src="img/SteamFinder.svg" id="typography_top" alt="Tipografía de SteamFinder">
                 </a>
             </div>
             <div class="navbar__container mx-4 my-1">
@@ -31,14 +31,15 @@
     <div class="main-screen">
         <h1 class="text-light text-center my-5">Búsqueda de usuario</h1>
         <div id="buscadorUsuario" class="main-screen__buscador text-center">
-            <input id="userSearchBar" name="text" class="search-bar px-3 py-2" type="search" aria-label="Search" placeholder="ID o nombre de usuario"/>
+            <input id="userSearchBar" name="text" class="search-bar px-3 py-2" type="search" aria-label="Search" placeholder="ID o nombre de usuario" autofocus/>
             <button class="btn btn-search" type="submit" onclick="searchUser()">
                 <i class="bi bi-search"></i>
             </button>
             <h5 id="userSearchError" class="text-danger text-center my-5" hidden>No se han encontrado resultados.</h5>
         </div>
         <div class="main-screen__descripcion mt-0">
-            <img src="img/ID.png" alt="ID" width="450px" class="mx-auto d-block my-4">
+            <img src="img/ID.png" alt="ID" width="450px" class="mx-auto d-block my-4" aria-describedby="demoId"/>
+            <p id="demoId" hidden>Demostración gráfica de donde se encuentra la ID en la interfaz de Steam. Justo debajo del nombre de la cuenta en el perfil del usuario.</p>
             <h2 class="text-primary mb-3">¿Qué es el ID?</h2>
             <p class="mb-5">
                 El ID de Steam es un identificador único de 17 caracteres asociado a una cuenta de usuario de Steam.

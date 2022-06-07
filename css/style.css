@@ -12483,9 +12483,6 @@ nav {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-  -webkit-box-align: right;
-      -ms-flex-align: right;
-          align-items: right;
 }
 
 .filtro {
