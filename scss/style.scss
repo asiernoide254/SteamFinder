@@ -368,6 +368,10 @@ nav {
     .card-img {
         width: 25% !important;
     }
+
+    .form-select {
+        width: 205px;
+    }
 }
 
 @media screen and (max-width:650px) {
@@ -398,8 +402,10 @@ nav {
     }
 
     .search-bar {
-        width: 250px;
+        width: 220px;
     }
+
+
 }
 
 @media screen and (max-width: 400px) {

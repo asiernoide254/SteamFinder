@@ -12518,6 +12518,9 @@ nav {
   .card-img {
     width: 25% !important;
   }
+  .form-select {
+    width: 205px;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -12549,7 +12552,7 @@ nav {
     width: 40% !important;
   }
   .search-bar {
-    width: 250px;
+    width: 220px;
   }
 }
 
