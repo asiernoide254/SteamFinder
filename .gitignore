@@ -40,4 +40,6 @@ Thumbs.db
 # Folders to ignore
 /js/coverage/
 /node_modules/
-/css/style.css.map
+
+# Files to ignore
+css/style.css.map
