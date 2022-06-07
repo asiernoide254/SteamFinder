@@ -12190,6 +12190,18 @@ nav {
   height: 125px;
 }
 
+.card-videojuegos-titulo {
+  background-color: transparent !important;
+  height: 10px !important;
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+.card-videojuegos-titulo:hover {
+  -webkit-transform: initial !important;
+          transform: initial !important;
+}
+
 .card-videojuegos-body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12198,9 +12210,8 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -12513,11 +12524,11 @@ nav {
   ::placeholder {
     font-size: 11px;
   }
-}
-
-@media screen and (max-width: 700px) {
-  .form-select {
-    width: 35%;
+  .fecha-lanzamiento {
+    display: none;
+  }
+  #tituloVideojuegos {
+    display: none;
   }
 }
 
@@ -12527,6 +12538,9 @@ nav {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .valoraciones {
+    display: none;
   }
 }
 

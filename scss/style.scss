@@ -142,10 +142,20 @@ nav {
     height: 125px;
 }
 
+.card-videojuegos-titulo {
+    background-color: transparent !important;
+    height: 10px !important;
+    transition: none !important;
+
+    &:hover {
+        transform: initial !important;
+    }
+}
+
 .card-videojuegos-body {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -351,17 +361,23 @@ nav {
     ::placeholder {
         font-size: 11px;
     }
-}
 
-@media screen and (max-width:700px) {
-    .form-select {
-        width: 35%;
+    .fecha-lanzamiento {
+        display: none;
+    }
+
+    #tituloVideojuegos {
+        display: none;
     }
 }
 
 @media screen and (max-width:650px) {
     nav{
         flex-direction: column;
+    }
+
+    .valoraciones {
+        display: none;
     }
 }
 

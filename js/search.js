@@ -15,19 +15,24 @@ function searchVg() {
 
   //No funciona bien en vista de movil
   for (var i = 0; i < cardImages.length; i++) {
-      if (filter == "") {
-          cardImages[i].style.width = "40%";
-      } else {
-          cardImages[i].style.width = "25%";
-      }
+    if (filter == "") {
+        cardImages[i].style.width = "40%";
+    } else {
+        cardImages[i].style.width = "25%";
+    }
   }
 
-  for (var i = 0; i < cards.length; i++) {
+  for (var i = 2; i < cards.length; i++) {
     var card = cards[i];
     a = card.getElementsByTagName("h5")[0];
     txtValue = a.textContent || a.innerText;
 
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      var divFechaLanzamiento = card.getElementsByClassName("fecha-lanzamiento")[0];
+      var divValoraciones = card.getElementsByClassName("valoraciones")[0];
+      
+      divFechaLanzamiento.hidden = filter == "";
+      divValoraciones.hidden = filter == "";
       card.style.display = "";
       resultsFound = true;
     } else {
@@ -36,9 +41,29 @@ function searchVg() {
   }
 
   cards = Array.prototype.slice.call(cards, 0);
-  cards = quickSort(cards, 0, cards.length - 1, orderBy);
+  cards = quickSort(cards, 2, cards.length - 1, orderBy);
 
   container.innerHTML = "";
+
+  if (resultsFound) {
+    var divFechaLanzamiento = cards[1].getElementsByClassName("fecha-lanzamiento")[0];
+    var divValoraciones = cards[1].getElementsByClassName("valoraciones")[0];
+
+    if (filter == "") {
+      cards[0].style.display = "";
+      divFechaLanzamiento.hidden = true;
+      divValoraciones.hidden = true;
+    } else {
+      cards[0].style.display = "none";
+      divFechaLanzamiento.hidden = false;
+      divValoraciones.hidden = false;
+    }
+
+    cards[1].style.display = "";
+  } else {
+    cards[1].style.display = "none";
+  }
+
   for (var i = 0; i < cards.length; i++) {
     container.appendChild(cards[i]);
   }
@@ -91,24 +116,28 @@ function quickSort(cards, left, right, orderBy) {
 
 function compare(card1, card2, orderBy) {
   switch(orderBy) {
-    case "Récord de jugadores":
+    case "record":
       return getRecord(card2) - getRecord(card1);
-    case "Precio más bajo":
+    case "precioAscendente":
       return getPrice(card1) - getPrice(card2);
-    case "Precio más alto":
+    case "precioDescendente":
       return getPrice(card2) - getPrice(card1);
+    case "fechaLanzamientoAscendente":
+      return getDate(card1) - getDate(card2);
+    case "fechaLanzamientoDescendente":
+      return getDate(card2) - getDate(card1);
     default:
-      return 0;
+      return getReviewsValue(card2) - getReviewsValue(card1);
   }
 }
 
 function getRecord(card) {
-  recordString = card.getElementsByClassName("numero-jugadores")[0].innerHTML.replace(".", "");
+  var recordString = card.getElementsByClassName("numero-jugadores")[0].innerHTML.replace(".", "");
   return parseInt(recordString);
 }
 
 function getPrice(card) {
-  priceString = card.getElementsByClassName("precio")[0].innerHTML;
+  var priceString = card.getElementsByClassName("precio")[0].innerHTML;
 
   if (priceString == "Gratuito") {
     return 0;
@@ -116,6 +145,17 @@ function getPrice(card) {
     priceString = priceString.substring(0, priceString.length - 1).replace(",", ".");
     return parseFloat(priceString);
   }
+}
+
+function getDate(card) {
+  var dateParts = card.getElementsByClassName("fecha-lanzamiento")[0].innerHTML.split("/");
+  return new Date(+dateParts[2], dateParts[1] - 1, +dateParts[0]);
+}
+
+function getReviewsValue(card) {
+  var reviews = card.getElementsByClassName("valoraciones")[0].innerHTML;
+  var types = ["Muy negativas", "Mayormente negativas", "Variadas", "Mayormente positivas", "Muy positivas"];
+  return types.indexOf(reviews);
 }
 
 function addEnterListener() {
