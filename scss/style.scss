@@ -361,27 +361,6 @@ nav {
     justify-content: right;
 }
 
-//Personalizar scrollbar
-/*
-::-webkit-scrollbar {
-    width: 10px;
-
-    &-track {
-        background: transparentize($color: #000000, $amount: 0.8);
-    }
-
-    &-thumb {
-        background: #888;
-        border-radius: 10px;
-        
-        &:hover {
-            background: #777;
-        }
-    }
-    
-}
-*/
-
 @media screen and (min-width: 1024px) {
     //Personalizar scrollbar
     ::-webkit-scrollbar {
