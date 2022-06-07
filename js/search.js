@@ -15,10 +15,16 @@ function searchVg() {
 
   //No funciona bien en vista de movil
   for (var i = 0; i < cardImages.length; i++) {
-    if (filter == "") {
-        cardImages[i].style.width = "40%";
+    var cardImage = cardImages[i];
+
+    if (screen.width < 400) {
+      cardImage.style.width = "100%";
     } else {
-        cardImages[i].style.width = "25%";
+      if (filter == "") {
+        cardImage.style.width = "40%";
+      } else {
+        cardImage.style.width = "25%";
+      }
     }
   }
 

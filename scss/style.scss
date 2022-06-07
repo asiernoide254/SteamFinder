@@ -368,6 +368,10 @@ nav {
     #tituloVideojuegos {
         display: none;
     }
+
+    .card-img {
+        width: 25% !important;
+    }
 }
 
 @media screen and (max-width:650px) {
@@ -392,6 +396,10 @@ nav {
     .usuario-buscador-contenedor, .error-contenedor{
         justify-content: center;
     }
+
+    .card-img {
+        width: 40% !important;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -402,7 +410,7 @@ nav {
     }
 
     .card-img {
-        width: 100%;
+        width: 100% !important;
 
         border-top-left-radius: 20px;
         border-bottom-left-radius: 0;
