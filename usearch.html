@@ -13,7 +13,7 @@
     <header>
         <nav>
             <div class="navbar__container mx-4 my-1">
-                <a href="index.html" id="inicioButton" class="btn btn-secondary" role="button">
+                <a href="index.html" id="inicioButton" class="btn btn-secondary" role="button" title="Inicio">
                     Inicio
                 </a>
                 <a href="index.html" style="text-decoration: none;">
@@ -22,7 +22,7 @@
                 </a>
             </div>
             <div class="navbar__container mx-4 my-1">
-                <a href="vgsearch.html" class="btn btn-secondary mx-3" role="button">
+                <a href="vgsearch.html" class="btn btn-secondary mx-3" role="button" title="Buscar videojuegos">
                     Buscar videojuegos
                 </a>
             </div>
@@ -31,15 +31,16 @@
     <div class="main-screen">
         <h1 class="text-light text-center my-5">Búsqueda de usuario</h1>
         <div id="buscadorUsuario" class="main-screen__buscador text-center">
-            <input id="userSearchBar" name="text" class="search-bar px-3 py-2" type="search" aria-label="Search" placeholder="ID o nombre de usuario" autofocus/>
-            <button class="btn btn-search" type="submit" onclick="searchUser()">
+            <input id="userSearchBar" name="text" class="search-bar px-3 py-2" type="search" aria-label="Search" placeholder="ID o nombre de usuario" title="Buscar usuario por ID o nombre" autofocus/>
+            <button class="btn btn-search" type="submit" title="Buscar" onclick="searchUser()">
                 <i class="bi bi-search"></i>
             </button>
             <h5 id="userSearchError" class="text-danger text-center my-5" hidden>No se han encontrado resultados.</h5>
         </div>
         <div class="main-screen__descripcion mt-0">
             <img src="img/ID.png" alt="ID" width="450px" class="mx-auto d-block my-4" aria-describedby="demoId"/>
-            <p id="demoId" hidden>Demostración gráfica de donde se encuentra la ID en la interfaz de Steam. Justo debajo del nombre de la cuenta en el perfil del usuario.</p>
+            <p id="demoId" hidden>Demostración gráfica de donde se encuentra la ID en la interfaz de Steam. 
+                Justo debajo del nombre de la cuenta en el perfil del usuario.</p>
             <h2 class="text-primary mb-3">¿Qué es el ID?</h2>
             <p class="mb-5">
                 El ID de Steam es un identificador único de 17 caracteres asociado a una cuenta de usuario de Steam.
