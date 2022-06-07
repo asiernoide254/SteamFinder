@@ -12158,7 +12158,7 @@ nav {
 .search-bar {
   border-radius: 50px;
   margin-right: 10px;
-  width: 20%;
+  width: 300px;
 }
 
 .bi-search {
@@ -12509,18 +12509,6 @@ nav {
   .main-screen__descripcion > img {
     width: 100%;
   }
-  ::-webkit-input-placeholder {
-    font-size: 11px;
-  }
-  :-ms-input-placeholder {
-    font-size: 11px;
-  }
-  ::-ms-input-placeholder {
-    font-size: 11px;
-  }
-  ::placeholder {
-    font-size: 11px;
-  }
   .fecha-lanzamiento {
     display: none;
   }
@@ -12559,6 +12547,9 @@ nav {
   }
   .card-img {
     width: 40% !important;
+  }
+  .search-bar {
+    width: 250px;
   }
 }
 
