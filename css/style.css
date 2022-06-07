@@ -12137,6 +12137,14 @@ nav {
   transition: all 0.5s ease;
 }
 
+.btn:focus {
+  background-color: #214168;
+  -webkit-box-shadow: 0px 1px 20px #3c74b8;
+          box-shadow: 0px 1px 20px #3c74b8;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
 .btn-primary {
   width: 20%;
   padding: 14px;
@@ -12248,6 +12256,14 @@ nav {
   transition: all 1s ease 0.1s;
   -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
           transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:focus-within {
+  border: none;
+  -webkit-box-shadow: 0px 2px 30px #2B66AF;
+          box-shadow: 0px 2px 30px #2B66AF;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .contenedor-usuario {
@@ -12518,9 +12534,6 @@ nav {
   .card-img {
     width: 25% !important;
   }
-  .form-select {
-    width: 205px;
-  }
 }
 
 @media screen and (max-width: 650px) {
@@ -12532,6 +12545,9 @@ nav {
   }
   .valoraciones {
     display: none;
+  }
+  .form-select {
+    width: 205px;
   }
 }
 
@@ -12578,6 +12594,9 @@ nav {
   }
   .main-screen__descripcion {
     margin: 10% 12% 0 12%;
+  }
+  .card-videojuegos-titulo {
+    display: none !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

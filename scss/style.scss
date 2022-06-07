@@ -93,6 +93,12 @@ nav {
         transition: all 0.5s ease;
     }
 
+    &:focus {
+        background-color: #214168;
+        box-shadow: 0px 1px 20px #3c74b8;
+        transition: all 0.3s ease;
+    }
+
     &-primary {
         width: 20%;
         padding: 14px;
@@ -189,6 +195,13 @@ nav {
         transform: scale(1.1);
         transition: all 1s ease 0.1s;
         transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    &:focus-within {
+        border: none;
+        box-shadow: 0px 2px 30px #2B66AF;
+        
+        transition: all 0.3s ease;
     }
 }
 
@@ -368,10 +381,6 @@ nav {
     .card-img {
         width: 25% !important;
     }
-
-    .form-select {
-        width: 205px;
-    }
 }
 
 @media screen and (max-width:650px) {
@@ -381,6 +390,10 @@ nav {
 
     .valoraciones {
         display: none;
+    }
+
+    .form-select {
+        width: 205px;
     }
 }
 
@@ -404,8 +417,6 @@ nav {
     .search-bar {
         width: 220px;
     }
-
-
 }
 
 @media screen and (max-width: 400px) {
@@ -429,5 +440,9 @@ nav {
 
     .main-screen__descripcion {
         margin: 10% 12% 0 12%;
+    }
+
+    .card-videojuegos-titulo {
+        display: none !important;
     }
 }
