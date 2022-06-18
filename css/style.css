@@ -12657,5 +12657,8 @@ nav {
   .card-videojuegos-titulo {
     display: none !important;
   }
+  #typography_top {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
