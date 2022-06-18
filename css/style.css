@@ -11513,6 +11513,7 @@ nav {
   border-bottom-left-radius: 20px;
 }
 .card-reciente {
+  border-radius: 0;
   background: none;
 }
 .card:hover {
