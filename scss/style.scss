@@ -469,6 +469,10 @@ nav {
     .search-bar {
         width: 220px;
     }
+
+    #usuario-tiempo-reciente {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 400px) {
